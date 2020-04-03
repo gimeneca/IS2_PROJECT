@@ -65,7 +65,7 @@ class UsuarioList(LoginRequiredMixin, ListView):
 class editarUsuario(LoginRequiredMixin, UpdateView):
     model = UsuarioSistema
     fields = ['username', 'first_name', 'last_name', 'email', 'Rol']
-    template_name = 'usuario/usuario_form.html'
+    template_name = 'usuario/registro.html'
     success_url = reverse_lazy("index")
 
 
