@@ -80,9 +80,9 @@ WSGI_APPLICATION = 'IS2_PROY.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'samba',
+        'NAME': 'is2',
         'USER': 'postgres',
-        'PASSWORD': 'ginocrau19',
+        'PASSWORD': 'postgres',
         'HOST': 'localhost',
         'PORT': '5432',
     }
