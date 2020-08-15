@@ -38,6 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'apps.rol',
+    'apps.usuario',
 ]
 
 MIDDLEWARE = [
@@ -78,7 +80,7 @@ WSGI_APPLICATION = 'IS2_PROY.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'samba',
+        'NAME': 'is2',
         'USER': 'postgres',
         'PASSWORD': 'postgres',
         'HOST': 'localhost',
@@ -130,3 +132,4 @@ STATICFILES_DIRS = (
 
 
 LOGIN_REDIRECT_URL = reverse_lazy('index')
+AUTH_USER_MODEL = 'usuario.UsuarioSistema'
